@@ -22,11 +22,12 @@ def predict(index: int):
     if risk > 2:
         anomaly = True
         alert = "PATIENT DISTRESS — SEND ALERT TO AMBULANCE"
-
+    confidence = 0.85
     return {
         "hr": float(row["hr"]),
         "spo2": float(row["spo2"]),
         "risk": risk,
         "anomaly": anomaly,
         "alert": alert
+
     }
