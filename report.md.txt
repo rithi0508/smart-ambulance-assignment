@@ -1,0 +1,20 @@
+Smart Ambulance Monitoring
+
+Data generated for 30 minutes.
+
+Artifacts removed.
+
+Anomaly detected using rolling mean.
+
+Risk score created.
+
+Metrics:
+precision, recall, false alert rate.
+
+Failure cases:
+motion noise
+missed anomaly
+delay
+
+Safety:
+never fully automate medical decisions
