@@ -1,7 +1,10 @@
 # Smart Ambulance Assignment
 
-This project analyzes patient vital data and detects anomalies and risk level using Python.
-It also includes a Flask app to display the final output.
+This project analyzes patient vital data, detects anomalies, classifies risk level, and provides an API using FastAPI.
+
+The project includes data cleaning, anomaly detection, risk classification, plots, and a FastAPI server to display results.
+
+---
 
 ## Project Steps
 
@@ -9,7 +12,9 @@ It also includes a Flask app to display the final output.
 2. Anomaly detection
 3. Risk classification
 4. Plot generation
-5. Flask app to display results
+5. FastAPI app to show results
+
+---
 
 ## Files in this project
 
@@ -22,10 +27,13 @@ risk.csv
 final_output.csv  
 spo2_plot.png  
 anomaly_plot.png  
+README.md  
+
+---
 
 ## How to run this project
 
-### Step 1 — Clone the repository
+### Step 1 — Clone repository
 
 ```
 git clone https://github.com/rithi0508/smart-ambulance-assignment.git
@@ -38,26 +46,29 @@ cd smart-ambulance-assignment
 pip install -r requirements.txt
 ```
 
-### Step 3 — Run the Flask app
+### Step 3 — Run FastAPI server
 
 ```
-python app.py
+uvicorn app:app --reload
 ```
 
 ### Step 4 — Open in browser
 
-Open this in browser:
-
 ```
-http://127.0.0.1:8000/
+http://127.0.0.1:8000/docs
 ```
 
-You will see the final output table.
+You will see the API documentation page.
+
+---
 
 ## Output
 
 - Cleaned data
 - Anomaly detection
 - Risk classification
+- Final output CSV
 - Plots
-- Final output table in browser
+- FastAPI endpoint
+
+---
